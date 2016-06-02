@@ -1,0 +1,47 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="VietnamFoods.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/wall_wrap.jpg"/>
+        </Grid.Background>
+
+
+        <!--ContentPanel - place additional content here-->
+
+        <phone:Pivot FlowDirection="LeftToRight" IsTabStop="True" Margin="10,10,-20,0">
+            <phone:PivotItem Margin="-20,-26,10,-49" >
+                <phone:PivotItem.Background>
+                    <ImageBrush ImageSource="/Assets/welcome_bg02.jpg"/>
+                </phone:PivotItem.Background>
+            </phone:PivotItem>
+
+            <phone:PivotItem Margin="0,0,32,0">
+                <!--<Image Source="/Assets/end_ads.jpg" Margin="-116,-44,-50,-20"/>-->
+                <phone:PivotItem.Background>
+                    <ImageBrush ImageSource="/Assets/end_ads.jpg"/>
+                </phone:PivotItem.Background>
+                <Button Content="Try Now" Width="450" Height="80" Margin="-2,658,10,10" Click="Go_MainApp_Click"/>
+            </phone:PivotItem>
+
+
+        </phone:Pivot>
+
+
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

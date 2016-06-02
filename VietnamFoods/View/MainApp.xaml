@@ -1,0 +1,147 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="VietnamFoods.View.MainApp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#72a20e">
+
+        <phone:Panorama Margin="0,10,0,-10" Title="Vietnam Traditional Food" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light">
+            <phone:Panorama.Background>
+                <ImageBrush ImageSource="/Assets/pano_bg.jpg"/>
+            </phone:Panorama.Background>
+            <!--<phone:Panorama.Title>
+                <TextBlock Text="Vietnam Traditional Foods" FontSize="90" Height="120" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+            </phone:Panorama.Title>-->
+            <phone:PanoramaItem Height="608" FontFamily="Microsoft JhengHei UI Light" >
+                <phone:PanoramaItem.Header>
+                    <TextBlock Text="Main Menu" FontSize="40" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+                </phone:PanoramaItem.Header>
+                
+              <!--Control-->
+                <ListBox>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="80" Height="80" Source="/Assets/whatnew.jpg"/>
+                            <TextBlock Text="    "/>
+                            <StackPanel Orientation="Vertical">
+                                <!--<TextBlock Text="Getting Started" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30"/>-->
+                                <HyperlinkButton Content="What's New?" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30"/>
+                                <TextBlock  Height="10"/>
+                                <TextBlock Text="New Foods To Day" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" Width="168" />
+                            </StackPanel>
+                        </StackPanel>
+                        <!--<HyperlinkButton Content="First Content" FontSize="40"/>-->
+                    </ListBoxItem>
+                    <ListBoxItem Height="40"/>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="80" Height="80" Source="/Assets/mienbac.jpg"/>
+                            <TextBlock Text="    "/>
+                            <StackPanel Orientation="Vertical">
+                                <!--<TextBlock Text="Foods in the North" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30"/>-->
+                                <HyperlinkButton Content="Foods in the North" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30" />
+                                <TextBlock  Height="10"/>
+                                <TextBlock Text="Culinary sophistication" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" Width="261"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <!--<HyperlinkButton Content="First Content" FontSize="40"/>-->
+                    </ListBoxItem>
+                    <ListBoxItem Height="40"/>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="80" Height="80" Source="/Assets/mientrung.jpg"/>
+                            <TextBlock Text="    "/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton Content="Foods in the Centre" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30"/>
+                                <TextBlock  Height="10"/>
+                                <TextBlock Text="Tasty and Spicy dishes" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" Width="265" />
+                            </StackPanel>
+                        </StackPanel>
+                        <!--<HyperlinkButton Content="First Content" FontSize="40"/>-->
+                    </ListBoxItem>
+                    <ListBoxItem Height="40"/>
+                    <ListBoxItem >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="80" Height="80" Source="/Assets/miennam.jpg"/>
+                            <TextBlock Text="    "/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton Content="Foods in the South" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" FontSize="30"/>
+                                <TextBlock  Height="10"/>
+                                <TextBlock Text="Culinary diversity" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light" Width="258" />
+                            </StackPanel>
+                        </StackPanel>
+                        <!--<HyperlinkButton Content="First Content" FontSize="40"/>-->
+                    </ListBoxItem>
+
+                </ListBox>
+            </phone:PanoramaItem>
+
+            <phone:PanoramaItem >
+                <phone:PanoramaItem.Header>
+                    <TextBlock Text="Northern Dishes" FontSize="40" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+                </phone:PanoramaItem.Header>
+
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,320">
+                    <StackPanel Orientation="Vertical">
+                        <Button Width="130" Height="110">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Assets/mienbac.jpg"/>
+                            </Button.Background>
+                        </Button>
+                        <TextBlock Height="5"/>
+                        <TextBlock Text="Dish Name" TextAlignment="Center" FontSize="27"/>
+                        <TextBlock Height="4"/>
+                        <TextBlock Text="Dish Dish Content" TextAlignment="Center" FontSize="20"/>
+                    </StackPanel>
+                    <TextBlock Text="            " Margin="0,0,0,446"/>
+                    <StackPanel Orientation="Vertical">
+                        <Button Width="130" Height="110">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Assets/mienbac.jpg"/>
+                            </Button.Background>
+                        </Button>
+                        <TextBlock Height="5"/>
+                        <TextBlock Text="Dish Name" TextAlignment="Center" FontSize="27"/>
+                        <TextBlock Height="4"/>
+                        <TextBlock Text="Dish Dish Content" TextAlignment="Center" FontSize="20"/>
+                    </StackPanel>
+                </StackPanel>
+                
+                
+                
+                
+            </phone:PanoramaItem>
+            
+            <phone:PanoramaItem >
+                <phone:PanoramaItem.Header>
+                    <TextBlock Text="Central Dishes" FontSize="40" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+                </phone:PanoramaItem.Header>
+            </phone:PanoramaItem>
+            
+            <phone:PanoramaItem >
+                <phone:PanoramaItem.Header>
+                    <TextBlock Text="South Dishes" FontSize="40" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+                </phone:PanoramaItem.Header>
+            </phone:PanoramaItem>
+
+            <phone:PanoramaItem >
+                <phone:PanoramaItem.Header>
+                    <TextBlock Text="Traditional Foods" FontSize="40" FontWeight="ExtraLight" FontFamily="Microsoft JhengHei UI Light"/>
+                </phone:PanoramaItem.Header>
+            </phone:PanoramaItem>
+
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>
